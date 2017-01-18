@@ -6,6 +6,8 @@ class Array
   # the location of all identical elements. The keys are the
   # duplicated elements, and the values are arrays of their positions,
   # sorted lowest to highest.
+  # if you have issue with modifying the default value for the dups hash
+  # see here http://stackoverflow.com/questions/16159370/ruby-hash-default-value-behavior
   def dups
   end
 
