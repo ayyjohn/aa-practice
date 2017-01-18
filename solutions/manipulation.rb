@@ -35,7 +35,8 @@ class String
   # examples of symmetrical strings. Do NOT use any built-in `reverse` methods.
 
   def symmetrical?
-    string = delete(' ')
+    string = self.dup
+    string = string.delete(' ')
     (0..string.length / 2).each do |i|
       return false unless string[i] == string[-1 - i]
     end
